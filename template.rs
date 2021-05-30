@@ -71,7 +71,7 @@ pub unsafe extern "C" fn IPDABI_STEP(
             Move::Defect => 0u8,
         },
     );
-    0 as *const core::ffi::c_void
+    retval as *const core::ffi::c_void
 }
 
 #[export_name = "IPDABI_MALLOC"]
